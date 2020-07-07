@@ -94,10 +94,6 @@ def detection():
                 cv2.putText(img, label , (x, y+20), font, 2, (0,0,0), 2)
                 cv2.putText(img, label , (x-1, y+20), font, 2, (255,255,255), 2)
 
-                focus_point = (int(x+w/2),y+h-3)
-                yresult = cv2.pointPolygonTest(yellow_poly, focus_point, False)
-                rresult = cv2.pointPolygonTest(red_poly, focus_point, False)
-
                 rect = Polygon([[x,y], [x+w,y], [x+w,y+h], [x,y+h]])           
                 r_poly = Polygon([(100,int(height/1.25)),(width-100,int(height/1.25)),(width-35, height),(35,height)])
                 y_poly = Polygon([(100,int(height/1.6)), (width-100,int(height/1.6)),(width,height-50), (width, height), (0,height), (0,height-50)])
@@ -117,7 +113,7 @@ def detection():
         cv2.circle(img, (30,30), 15, alert, -1)
         cv2.circle(img, (30,30), 14, (255,255,255), 1)
         cv2.circle(img, (30,30), 15, (0,0,0), 1)  
-        cv2.imshow('Image', img)
+        cv2.imshow('Vehicle Detection', img)
         key = cv2.waitKey(1)
         if key==27:
             break
