@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    margin: auto;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+.container{
+    padding: 12px;
+    margin: auto;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-btn{
+    
+    font-size: large;
+    border: none;
+    padding: 10px;
+    width: 300px;
+    margin: 5px;
+    margin-left: 0;
+    background-color: rgb(104, 202, 206);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5pt;
+    outline: none;
+}
+
+.input-btn:hover{
+    font-weight: bold;
+    opacity: 0.9;
+    transform: translate(0%,-1%);
+}
+
+.speed{
+    color: rgb(0, 0, 0);
+    background-color: rgb(170, 170, 170);
+}
+
+.dir{
+    background-color: rgb(255, 174, 0);
+}
+
+.go{
+    background-color: rgb(93, 255, 87);
+}
+
+.stop{
+    color: white;
+    background-color: rgb(255, 40, 40);
+}
+
+p{
+    color: white;
+    font-size: large;
+    font-family: monospace;
+    margin: 0;
+}
+
+hr{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
